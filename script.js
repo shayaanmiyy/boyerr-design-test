@@ -33,8 +33,8 @@ $(document).ready(function () {
   $('.testimonial-carousel').owlCarousel({
     loop: false,
     margin: 20,
-    loop: true,
-    autoplay: 5000,
+    loop: false,
+    // autoplay: 5000,
     autoplayHoverPause: true,
     nav: true,
     dots: true,

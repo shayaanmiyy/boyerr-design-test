@@ -592,7 +592,6 @@ footer {
     background: var(--background3);
 }
 
-
 @media screen and (min-width: 1600px) {
     .hero .cta {
         padding: 18% 21% 12% 0%;
