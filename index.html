@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta name="description" content="Travel Landing Page - Byoerr web Design ">
+    <meta name="keywords" content="Travel, Landing, Page, Byoerr, web, Design">
+    <link rel="canonical" href="http://127.0.0.1:5500/index.html">
+
+    <meta name="theme-color" content="#204763">
+
+
+    <title>Travel Landing Page - Byoerr web Design </title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl-theme.css">
+    <link rel="prefetch" href="/assets/img/hero-img.jpg" as="image">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader-wrapper">
+        <div class="loader-container">
+            <svg class="loader" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle class="loader-circle" cx="50" cy="50" r="45" />
+            </svg>
+        </div>
+
+    </div>
+
+    <main style="display: none;">
+
+        <!-- Navbar + Hero + About Us  -->
+        <section class="hero container-fluid">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-transparent p-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/img/logo.svg" alt="Boyerr Logo" title="Boyerr Logo" width="40" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" onclick="$('#navbarNav').addClass('active show');">
+                        <span class="navbar-toggler-icon border-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <div class="backicon">
+                            <img src="/assets/img/logo.svg" alt="Boyerr Logo" title="Boyerr Logo" width="40"
+                                height="40">
+                            <button class="navbar-toggler" onclick="$('#navbarNav').removeClass('active show');">
+                                <span class="navbar-toggler-icon border-0">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" href="#aboutus">About Us</a>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" href="#destination">Destination</a>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" href="#packages">Packages</a>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" href="#testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link" href="#contactus">Contact Us</a>
+                            </li>
+                            <li class="nav-item me-lg-3">
+                                <span class="nav-link" type="button"><i class="bi bi-search"></i></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- HERO -->
+            <div class="cta container">
+                <h1 class="">Lorem ipsum dolor sit <br>amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Nibh amet mi nullam mauris commodo mus euismod. Lacus in
+                    curabitur scelerisque amet eu enim. Arcu consectetur venenatis mauris enim rhoncus.
+                </p>
+                <button class="btn text-light border-effect text-nowrap">
+                    <svg width="27" height="26" class="shake" viewBox="0 0 27 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.87833 11.2858C7.91833 15.295 11.205 18.5675 15.2142 20.6217L18.3308 17.505C18.7133 17.1225 19.28 16.995 19.7758 17.165C21.3625 17.6892 23.0767 17.9725 24.8333 17.9725C25.6125 17.9725 26.25 18.61 26.25 19.3892V24.3333C26.25 25.1125 25.6125 25.75 24.8333 25.75C11.5308 25.75 0.75 14.9692 0.75 1.66667C0.75 0.8875 1.3875 0.25 2.16667 0.25H7.125C7.90417 0.25 8.54167 0.8875 8.54167 1.66667C8.54167 3.4375 8.825 5.1375 9.34917 6.72417C9.505 7.22 9.39167 7.7725 8.995 8.16917L5.87833 11.2858Z"
+                            fill="white" />
+                    </svg>
+                    Book a call
+                </button>
+            </div>
+
+            <!-- About US -->
+            <div class="about-us" id="aboutus">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 about-grid order-2 order-xl-1">
+                            <img src="/assets/img/about-us-person.jpg" alt="Person Inside Water"
+                                title="Person Inside Water">
+                            <img src="/assets/img/about-us-scuba.jpg" alt="Person Talking with Fishes"
+                                title="Person Talking with Fishes">
+                            <img src="/assets/img/about-us-turtle.jpg" alt="Turtle In Water" title="Turtle In Water">
+                        </div>
+                        <div class="col-xl-6 p-3 mb-5 mb-lg-0 order-1 order-xl-2">
+                            <h2>About Us</h2>
+                            <h5>Discover the various breathtaking locations</h5>
+                            <div class="border-start border-4 border-primary ps-4 mt-4 mb-4">
+                                <p>Lorem ipsum dolor sit amet consectetur. In at amet semper velit elit nisi faucibus
+                                    arcu.
+                                    Bibendum nulla porttitor faucibus bibendum erat a vulputate sed. Quisque quis
+                                    viverra turpis
+                                    at erat vel ut metus congue. Sed senectus ullamcorper imperdiet sit fermentum.
+                                    Fermentum
+                                    faucibus proin hac sed condimentum euismod felis risus.</p>
+                            </div>
+                            <button class="btn theme-btn border-effect">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Destination -->
+        <section class="destination" id="destination">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h2>Destination</h2>
+                        <h5>Discover the varoius breathtaking location</h5>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme destination-carousel mt-5">
+
+                    <div class="item" style="background-image: url(/assets/img/destination-1.jpg);">
+                        <div class="overlay">
+                            <h4>Destination 1</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In at amet semper</p>
+                            <button class="destination-button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/assets/img/destination-2.jpg);">
+                        <div class="overlay">
+                            <h4>Destination 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In at amet semper</p>
+                            <button class="destination-button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/assets/img/destination-3.jpg);">
+                        <div class="overlay">
+                            <h4>Destination 3</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In at amet semper</p>
+                            <button class="destination-button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/assets/img/destination-4.jpg);">
+                        <div class="overlay">
+                            <h4>Destination 4</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In at amet semper</p>
+                            <button class="destination-button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/assets/img/destination-1.jpg);">
+                        <div class="overlay">
+                            <h4>Destination 5</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In at amet semper</p>
+                            <button class="destination-button">View Details</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Packages -->
+        <section class="packages" id="packages">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 mb-5 mb-xl-0">
+                        <h2>Packages</h2>
+                        <h5>Choose your best package</h5>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur. In at amet semper velit elit nisi faucibus arcu.
+                            Bibendum
+                            nulla porttitor faucibus bibendum erat a vulputate sed.</p>
+                        <div class="border-start border-primary border-3 ps-3 text-light">
+                            <ol class="custom-ordered-list">
+                                <li>
+                                    <h4>Golden Package</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                                <li>
+                                    <h4>Silver Package</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                                <li>
+                                    <h4>Bronze Package</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <button class="theme-btn border-effect text-nowrap mt-5 text-light">
+                            View Package Details <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="col-xl-6 text-center">
+                        <img src="/assets/img/destination-1.jpg" alt="Destination 1" title="Destination 1">
+                        <img src="/assets/img/destination-3.jpg" alt="Destination 2" title="Destination 2">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- testimonial -->
+        <section class="testimonial" id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h2>Testimonial</h2>
+                        <h5>What our client says about us</h5>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+
+                <div class="mt-5 owl-carousel owl-theme testimonial-carousel">
+                    <div class="test-cont border-effect">
+                        <div class="testimonial-bio ">
+                            <div class="avatar">
+                                <img src="/assets/img/person-1.jpg" alt="Person 1" title="Person 1">
+                            </div>
+                            <div>
+                                <h6 class="text-nowrap m-0">Michael Wrong</h6>
+                                <ul class="list-unstyled d-flex gap-1 m-0">
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-half" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+                                volutpat
+                                lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                        </div>
+                    </div>
+                    <div class="test-cont border-effect">
+                        <div class="testimonial-bio">
+                            <div class="avatar">
+                                <img src="/assets/img/person-2.jpg" alt="Person 2" title="Person 2">
+
+                            </div>
+                            <div>
+                                <h6 class="text-nowrap m-0">Michael Wrong</h6>
+                                <ul class="list-unstyled d-flex gap-1 m-0">
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-half" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+                                volutpat
+                                lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                        </div>
+
+                    </div>
+                    <div class="test-cont border-effect">
+                        <div class="testimonial-bio">
+                            <div class="avatar">
+                                <img src="/assets/img/person-3.jpg" alt="Person 3" title="Person 3">
+
+                            </div>
+                            <div>
+                                <h6 class="text-nowrap m-0">Michael Wrong</h6>
+                                <ul class="list-unstyled d-flex gap-1 m-0">
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-half" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+                                volutpat
+                                lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                        </div>
+
+                    </div>
+                    <div class="test-cont border-effect">
+                        <div class="testimonial-bio">
+                            <div class="avatar">
+                                <img src="/assets/img/person-3.jpg" alt="person 4" title="person 4">
+
+                            </div>
+                            <div>
+                                <h6 class="text-nowrap m-0">Michael Wrong</h6>
+                                <ul class="list-unstyled d-flex gap-1 m-0">
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-fill" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star-half" aria-hidden="true"></i></li>
+                                    <li><i class="bi bi-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+                                volutpat
+                                lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Banner -->
+        <section class="contact-us" id="contactus">
+            <div class="row align-items-center container">
+                <div class="col-lg-6">
+                    <h2 class="">Contact Us</h2>
+                    <h5 class="">Lorem ipsum dolor sit amet consectetur.</h5>
+                </div>
+                <div class="col-lg-6">
+                    <form class="input-wrapper position-relative" onsubmit="event.preventDefault(); return checkForm(this)">
+                        <div class="d-flex align-items-center gap-1 gap-lg-3">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" name="email" placeholder="name@domain.com">
+                        </div>
+                        <input type="submit" value="Send" id="">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="">
+            <div class="row py-5 container mx-auto">
+                <div class="col-12 col-md-12 col-lg-6 mb-5 mb-lg-3">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <img src="/assets/img/logo-white.svg" alt="Boyerr White logo" title="Boyerr White logo">
+                    </a>
+
+                    <p class="mt-4 mb-0">hello@byoerr.com</p>
+                    <p class="mt-1 mb-4">Phone: +01 23456789</p>
+
+                    <ul class="nav col-md-8 opacity-75  list-unstyled d-flex gap-3">
+                        <li class="me-3"><a class="text-light fs-3" href="#">
+                                <i class="bi bi-facebook"></i>
+                            </a></li>
+                        <li class="me-3"><a class="text-light fs-3" href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a></li>
+                        <li class="me-3"><a class="text-light fs-3" href="#">
+                                <i class="bi bi-twitter-x"></i>
+                            </a></li>
+                        <li class="me-3"><a class="text-light fs-3" href="#">
+                                <i class="bi bi-linkedin"></i>
+                            </a></li>
+                        <li class="me-3"><a class="text-light fs-3" href="#">
+                                <i class="bi bi-youtube"></i>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-3">
+                    <h5>Quick Links</h5>
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Services</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Portfolio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Testimonial</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-3">
+                    <h5>Resources</h5>
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Privacy & Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/owl-carousel.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
