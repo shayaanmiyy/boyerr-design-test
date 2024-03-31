@@ -511,6 +511,10 @@ section {
     margin: 0 auto;
 }
 
+.list-unstyled .bi {
+    color: var(--theme-white);
+}
+
 /* Testimonial End */
 
 /* Contact Us  Started */
