@@ -31,10 +31,10 @@ $(document).ready(function () {
 
 
   $('.testimonial-carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 20,
     loop: false,
-    // autoplay: 5000,
+    autoplay: 5000,
     autoplayHoverPause: true,
     nav: true,
     dots: true,
