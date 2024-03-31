@@ -70,7 +70,13 @@ window.onload = () => {
   }, 1500);
 };
 
-
 function checkForm(data) {
   alert("Your Email is " + data.email.value.trim());
 }
+
+$(".nav-item .nav-link").on('click', () => {
+  if ($('html').hasClass('overflow-hidden')) {
+    $('html').removeClass('overflow-hidden');
+    $('#navbarNav').removeClass('active show');
+  }
+})

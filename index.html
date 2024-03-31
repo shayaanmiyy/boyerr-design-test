@@ -44,7 +44,8 @@
                     <a class="navbar-brand" href="#">
                         <img src="/assets/img/logo.svg" alt="Boyerr Logo" title="Boyerr Logo" width="40" height="40">
                     </a>
-                    <button class="navbar-toggler" type="button" onclick="$('#navbarNav').addClass('active show'); $('html').addClass('overflow-hidden');">
+                    <button class="navbar-toggler" type="button"
+                        onclick="$('#navbarNav').addClass('active show'); $('html').addClass('overflow-hidden');">
                         <span class="navbar-toggler-icon border-0">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path
@@ -56,7 +57,8 @@
                         <div class="backicon">
                             <img src="/assets/img/logo.svg" alt="Boyerr Logo" title="Boyerr Logo" width="40"
                                 height="40">
-                            <button class="navbar-toggler" onclick="$('#navbarNav').removeClass('active show'); $('html').removeClass('overflow-hidden');">
+                            <button class="navbar-toggler"
+                                onclick="$('#navbarNav').removeClass('active show'); $('html').removeClass('overflow-hidden');">
                                 <span class="navbar-toggler-icon border-0">
                                     <i class="bi bi-x"></i>
                                 </span>
@@ -80,7 +82,9 @@
                                 <a class="nav-link" href="#contactus">Contact Us</a>
                             </li>
                             <li class="nav-item me-lg-3">
-                                <span class="nav-link" type="button"><i class="bi bi-search"></i></span>
+                                <span class="nav-link" type="button"
+                                    onclick="$('#modalOverlay').css('display', 'block')"><i
+                                        class="bi bi-search"></i></span>
                             </li>
 
                         </ul>
@@ -350,7 +354,8 @@
                     <h5 class="">Lorem ipsum dolor sit amet consectetur.</h5>
                 </div>
                 <div class="col-lg-6">
-                    <form class="input-wrapper position-relative" onsubmit="event.preventDefault(); return checkForm(this)">
+                    <form class="input-wrapper position-relative"
+                        onsubmit="event.preventDefault(); return checkForm(this)">
                         <div class="d-flex align-items-center gap-1 gap-lg-3">
                             <i class="bi bi-envelope"></i>
                             <input type="email" name="email" placeholder="name@domain.com">
@@ -416,6 +421,14 @@
         </footer>
 
     </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <i class="bi bi-x modal-close" onclick="$('#modalOverlay').css('display', 'none')"></i>
+        <div class="position-relative d-flex align-items-center">
+            <input type="text" placeholder="Search...">
+            <button><i class="bi bi-search"></i></button>
+        </div>
+    </div>
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.js"></script>

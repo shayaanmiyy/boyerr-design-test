@@ -592,6 +592,110 @@ footer {
     background: var(--background3);
 }
 
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.loader-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    animation: rotate 2s linear infinite;
+}
+
+.loader-circle {
+    fill: none;
+    stroke: var(--background1);
+    stroke-width: 5;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 283;
+    }
+
+    50% {
+        stroke-dashoffset: 70;
+    }
+
+    100% {
+        stroke-dashoffset: 283;
+    }
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    padding: 200px 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #012f4dd0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.modal-overlay input {
+    background-color: #fff;
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.modal-overlay button {
+    position: absolute;
+    right: 2%;
+    padding: 10px 20px;
+    top: 15px;
+
+    margin: auto 0;
+    background-color: var(--background3);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-overlay button:hover {
+    opacity: 0.8;
+}
+
 @media screen and (min-width: 1600px) {
     .hero .cta {
         padding: 18% 21% 12% 0%;
@@ -755,6 +859,14 @@ footer {
     footer img {
         width: 100px;
     }
+
+    .modal-overlay {
+        padding: 100px 50px;
+    }
+
+    .modal-overlay button {
+        top: 18.5px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -816,57 +928,18 @@ footer {
     .destination .overlay {
         opacity: 1;
     }
-}
 
-.loader-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-    overflow: hidden;
-}
-
-.loader-container {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader {
-    width: 100%;
-    height: 100%;
-    animation: rotate 2s linear infinite;
-}
-
-.loader-circle {
-    fill: none;
-    stroke: var(--background1);
-    stroke-width: 5;
-    stroke-dasharray: 283;
-    stroke-dashoffset: 283;
-    animation: dash 1.5s ease-in-out infinite;
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes dash {
-    0% {
-        stroke-dashoffset: 283;
+    .modal-overlay {
+        padding: 75px 35px;
     }
 
-    50% {
-        stroke-dashoffset: 70;
+    .modal-overlay input {
+ 
+        padding: 15px;
+     
     }
 
-    100% {
-        stroke-dashoffset: 283;
+    .modal-overlay button {
+        top: 10px;
     }
 }
