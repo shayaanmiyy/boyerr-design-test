@@ -1,0 +1,36 @@
+@mixin displayCenter {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin sm {
+    @media screen and (max-width: $smallScreen) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: $mediumScreen) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width: $largeScreen) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (max-width: $xlargeScreen) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media screen and (max-width: $xxlargeScreen) {
+        @content;
+    }
+}
