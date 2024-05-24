@@ -1,0 +1,65 @@
+@use "../_variables/index" as var;
+
+.destination {
+    background: var.$background2;
+
+    .item {
+        border: 10px solid var.$background2;
+        gap: 24px;
+        height: 440px;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        color: var.$theme-white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        margin: 0 auto;
+        transition: opacity 0.3s ease;
+
+        h4 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+        }
+
+        button {
+            background-color: transparent;
+            color: var.$theme-white;
+            box-sizing: border-box;
+            @include var.displayCenter;
+            padding: 16px 40px;
+            gap: 16px;
+            width: 216px;
+            height: 54px;
+            border: 1px solid var.$theme-white;
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+
+            &:hover {
+                background-color: var.$theme-white;
+                color: var.$background2;
+            }
+        }
+    }
+
+    .item:hover .overlay {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,212 @@
+@use "../_variables/index" as var;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+// Base Styles
+body {
+    @include var.font(var.$font-outfit, null, null, 1.75, var.$default-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+// Heading Styles
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: var.$font-inter;
+    color: var.$theme-white;
+}
+
+h1 {
+    @include var.font(var.$font-outfit, 4rem, 500, 1.2);
+    text-shadow: 8px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    @include var.font(null, 2.25rem, 600);
+}
+
+h5 {
+    @include var.font(null, 1.5rem);
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+}
+
+h6 {
+    @include var.font(null, 1.25rem, 600);
+}
+
+// Paragraph and Button Styles
+p,
+button {
+    @include var.font(var.$font-inter, 20px, 400, 1.4);
+}
+
+// Section Styles
+section {
+    padding: 120px 80px;
+    width: 100%;
+}
+
+// Navbar Styles
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-collapse .backicon {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    color: #000;
+
+    &:hover {
+        color: #333;
+    }
+}
+
+// Border Effect Styles
+.border-effect {
+    position: relative;
+
+    &::before {
+        @include var.border-effect-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.08), top);
+    }
+
+    &::after {
+        @include var.border-effect-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04), bottom);
+    }
+}
+
+// CTA Button Hover Animation
+.cta button:hover .shake {
+    animation: shakeAnimation 0.5s ease;
+}
+
+.shake {
+    transition: transform 0.3s;
+    @include var.keyframes-shake;
+}
+
+
+
+
+.loader-wrapper {
+    @include var.displayCenter;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.loader-container {
+    width: 100px;
+    height: 100px;
+    @include var.displayCenter;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    animation: rotate 2s linear infinite;
+}
+
+.loader-circle {
+    fill: none;
+    stroke: var.$background1;
+    stroke-width: 5;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 283;
+    }
+
+    50% {
+        stroke-dashoffset: 70;
+    }
+
+    100% {
+        stroke-dashoffset: 283;
+    }
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    padding: 200px 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #012f4dd0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+
+    button {
+        position: absolute;
+        right: 2%;
+        padding: 10px 20px;
+        top: 15px;
+        margin: auto 0;
+        background-color: var.$background3;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    input {
+        background-color: #fff;
+        width: 100%;
+        padding: 25px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 50px;
+    color: #FFFFFF;
+}

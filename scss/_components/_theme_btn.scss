@@ -1,0 +1,41 @@
+// THeme Button
+
+@use "../_variables/index" as var;
+
+.theme-btn {
+    color: var.$theme-white;
+    @include var.displayCenter;
+    padding: 16px 40px;
+    gap: 16px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    letter-spacing: -0.02em;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        i {
+            transform: translateX(5px);
+        }
+    }
+
+    i {
+        transition: transform 0.3s;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: rgba(255, 255, 255, 0.2);
+        color: #dedede !important;
+        @include var.box-shadow(0, 8px, 16px, 0, rgba(0, 0, 0, 0.25));
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+        backdrop-filter: blur(100px);
+        transition: backdrop-filter 0.3s;
+    }
+}

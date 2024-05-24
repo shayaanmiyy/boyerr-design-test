@@ -1,0 +1,65 @@
+@use "../_variables/index" as var;
+
+
+.contact-us {
+    @include var.displayCenter;
+    gap: 24px;
+    width: 100%;
+    background: url(var.$heroBgImage);
+    background-position: 45% 65%;
+
+    .input-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 8px 8px 24px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+
+        i {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        input {
+            background: transparent;
+            border: 0;
+            padding: 5px 5px;
+            caret-color: var.$theme-white;
+            color: var.$theme-white;
+
+            &:focus {
+                outline: 0;
+                border-radius: 8px;
+            }
+
+            &::placeholder {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.4);
+
+            }
+        }
+
+
+        input[type="submit"] {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: var.$theme-white;
+            padding: 14px 50px;
+            background: var.$background2;
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            border: 0;
+        }
+    }
+}

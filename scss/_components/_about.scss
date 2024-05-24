@@ -1,0 +1,49 @@
+@use "../_variables/index" as var;
+
+// About Section
+
+.about-us {
+    background: linear-gradient(180deg, rgba(15, 25, 34, 0) 0%, var.$background2 31.4%);
+
+    p {
+        line-height: 1.6;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        padding: 0 20px;
+        overflow: hidden;
+        filter: brightness(88%) saturate(90%) hue-rotate(24deg);
+
+        img:nth-child(1) {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 2;
+            object-fit: cover;
+            max-width: 288px;
+            max-height: 480px;
+            height: 100%;
+            width: 100%;
+        }
+
+        img:nth-child(2) {
+            grid-column: 2 / 2;
+            grid-row: 1;
+            object-fit: cover;
+            max-width: 288px;
+            max-height: 228px;
+            width: 100%;
+        }
+
+        img:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+            object-fit: cover;
+            max-width: 288px;
+            max-height: 228px;
+            width: 100%;
+        }
+    }
+}
