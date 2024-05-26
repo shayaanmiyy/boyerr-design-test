@@ -1,1 +1,19 @@
 @use "../_variables/index" as var;
+
+footer {
+    background: var.$background3;
+
+    $social-media-colors: (
+        facebook: #1877F2,
+        instagram: #e4405f,
+        twitter-x: #000,
+        linkedin: #0077b5,
+        youtube: #ff0000
+    );
+
+@each $platform, $color in $social-media-colors {
+    .bi-#{$platform}:hover {
+        color: $color;
+    }
+}
+}

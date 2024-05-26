@@ -18,28 +18,4 @@
 
 @use "./_components/responsive";
 
-footer {
-    background: var.$background3;
-}
-
-$icons: (
-    'facebook': 'bi-facebook',
-    'instagram': 'bi-instagram',
-    'twitter': 'bi-twitter-x',
-    'linkedin': 'bi-linkedin',
-    'youtube': 'bi-youtube'
-);
-
-
-// Generate HTML for the icons using SCSS syntax
-@each $name, $class in $icons {
-    .icon-#{$name} {
-      li.me-3 {
-        a.text-light.fs-3 {
-          .bi.#{$class} {
-            // Add any additional styles for the icon here
-          }
-        }
-      }
-    }
-  }
+@use "./_components/footer";
