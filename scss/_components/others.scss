@@ -86,19 +86,6 @@ section {
     }
 }
 
-// Border Effect Styles
-.border-effect {
-    position: relative;
-
-    &::before {
-        @include var.border-effect-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.08), top);
-    }
-
-    &::after {
-        @include var.border-effect-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04), bottom);
-    }
-}
-
 // CTA Button Hover Animation
 .cta button:hover .shake {
     animation: shakeAnimation 0.5s ease;
@@ -209,4 +196,41 @@ section {
     right: 1rem;
     font-size: 50px;
     color: #FFFFFF;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent !important;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -150px;
+    right: 0px;
+    color: #fff;
+}
+
+.owl-nav .nav {
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dedede;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: border-radius 0.3s, background-color 0.3s;
+}
+
+.owl-nav .nav:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
 }

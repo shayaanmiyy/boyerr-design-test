@@ -11,24 +11,13 @@
     color: $color;
 }
 
-@mixin border-effect-gradient($start-color, $end-color, $position: top) {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 0.6px;
-    z-index: 1;
-    width: 80%;
-    margin: 0 auto;
-    background: linear-gradient(to right, $start-color 0%, color.$theme-white 50%, $end-color 100%);
-
-    @if $position ==top {
-        top: 0;
-    }
-
-    @else {
-        bottom: 0;
-    }
+@mixin gradientBorder() {
+    border-left: 0;
+    border-right: 0;
+    border: 1px solid;
+    border-image-source: linear-gradient(to left, transparent 10%, #FFFFFF 50%, transparent 90%);
+    border-image-slice: 1;
+    border-width: 1px;
 }
 
 @mixin keyframes-shake {

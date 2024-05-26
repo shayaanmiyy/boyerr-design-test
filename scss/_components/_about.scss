@@ -9,6 +9,10 @@
         line-height: 1.6;
     }
 
+    button {
+        @include var.gradientBorder;
+    }
+
     .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

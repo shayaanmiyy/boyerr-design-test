@@ -13,6 +13,10 @@
         height: auto;
     }
 
+    button {
+        @include var.gradientBorder;
+    }
+
     .custom-ordered-list {
         list-style: none;
         counter-reset: custom-counter;

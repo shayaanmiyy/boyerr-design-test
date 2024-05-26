@@ -9,16 +9,18 @@
     background-position: 48% -10rem;
 
     .cta {
-        padding: 30% 40% 10% 0;
+        // padding: 30% 40% 10% 0;
+        padding: 30% 0% 10% 0;
 
         p {
             line-height: 1.6;
         }
 
         button {
+            @include var.gradientBorder;
             display: flex;
-            gap: 14px;
             align-items: center;
+            gap: 14px;
             padding: 24px 108px;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(8px);
