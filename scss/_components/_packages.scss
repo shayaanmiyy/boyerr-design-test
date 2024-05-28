@@ -2,7 +2,7 @@
 
 
 .packages {
-    background: var.$background3;
+    background: var.$prussianBlue;
 
     img {
         padding: 20px 12px;
@@ -42,7 +42,7 @@
                 border-radius: 50%;
                 @include var.displayCenter;
                 font-weight: normal;
-                background: var.$background1;
+                background: var.$cello;
             }
         }
 

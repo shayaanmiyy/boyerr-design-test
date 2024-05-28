@@ -2,7 +2,7 @@
 
 
 .testimonial {
-    background: var.$background2;
+    background: var.$mirage;
 
     .test-cont {
         padding: 64px 40px;
@@ -45,5 +45,23 @@
 
     .list-unstyled .bi {
         color: var.$theme-white;
+    }
+}
+
+@include var.responsive(lg) {
+    .testimonial {
+        padding-bottom: 130px;
+    }
+}
+
+@include var.responsive(md) {
+    .testimonial {
+        padding-bottom: 150px;
+    }
+}
+
+@include var.responsive(sm) {
+    .testimonial {
+        padding-bottom: 150px;
     }
 }

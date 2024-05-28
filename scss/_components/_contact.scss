@@ -56,10 +56,25 @@
             letter-spacing: -0.02em;
             color: var.$theme-white;
             padding: 14px 50px;
-            background: var.$background2;
+            background: var.$mirage;
             backdrop-filter: blur(8px);
             border-radius: 8px;
             border: 0;
+        }
+    }
+}
+
+@include var.responsive(sm) {
+
+    .contact-us .input-wrapper {
+        margin-top: 15px;
+        position: relative;
+        display: block;
+        padding: 12px;
+
+        input[type="submit"] {
+            width: 100%;
+            margin: 0 auto;
         }
     }
 }

@@ -1,8 +1,6 @@
 @use "breakpoints" as breakpoints;
 @use "colors" as color;
 
-
-
 @mixin font($family, $size, $weight: normal, $line-height: normal, $color: color.$theme-white) {
     font-family: $family;
     font-size: $size;

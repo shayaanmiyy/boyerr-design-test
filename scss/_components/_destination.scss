@@ -1,10 +1,10 @@
 @use "../_variables/index" as var;
 
 .destination {
-    background: var.$background2;
+    background: var.$mirage;
 
     .item {
-        border: 10px solid var.$background2;
+        border: 10px solid var.$mirage;
         gap: 24px;
         height: 440px;
         background-size: cover;
@@ -54,12 +54,28 @@
 
             &:hover {
                 background-color: var.$theme-white;
-                color: var.$background2;
+                color: var.$mirage;
             }
         }
     }
 
     .item:hover .overlay {
+        opacity: 1;
+    }
+}
+
+@include var.responsive(md) {
+    .destination {
+        padding-bottom: 150px;
+    }
+}
+
+@include var.responsive(sm) {
+    .destination {
+        padding-bottom: 150px;
+    }
+
+    .destination .overlay {
         opacity: 1;
     }
 }

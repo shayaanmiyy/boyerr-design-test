@@ -55,3 +55,40 @@
         }
     }
 }
+
+
+@include var.responsive(xxl) {
+    .hero .cta {
+        padding: 18% 21% 12% 0%;
+    }
+}
+
+@include var.responsive(lg) {
+    .hero .cta {
+        padding: 47% 0% 14%;
+    }
+}
+
+@include var.responsive(md) {
+    .hero {
+        background-position: 48% -18rem;
+    }
+
+    .hero .cta {
+        padding: 47% 0% 14%;
+    }
+
+    .hero .cta button {
+        gap: 14px;
+        padding: 14px 50px;
+        font-size: 18px;
+    }
+
+}
+
+@include var.responsive(sm) {
+    .hero .cta {
+        padding: 47% 15px 14%;
+    }
+
+}

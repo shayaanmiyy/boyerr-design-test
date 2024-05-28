@@ -1,7 +1,7 @@
 @use "../_variables/index" as var;
 
 footer {
-    background: var.$background3;
+    background: var.$prussianBlue;
 
     $social-media-colors: (
         facebook: #1877F2,
@@ -16,4 +16,11 @@ footer {
         color: $color;
     }
 }
+}
+
+@include var.responsive(md) {
+    footer img {
+        width: 100px;
+    }
+
 }

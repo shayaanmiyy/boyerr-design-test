@@ -1,6 +1,6 @@
 @use "./_variables" as var;
 
-@use "./_components/others";
+@use "./_components/global";
 
 @use "./_components/hero";
 
@@ -16,6 +16,6 @@
 
 @use "./_components/contact";
 
-@use "./_components/responsive";
-
 @use "./_components/footer";
+
+// @use "./_components/responsive";

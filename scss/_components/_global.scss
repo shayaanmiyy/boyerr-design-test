@@ -20,7 +20,7 @@ html {
 
 // Base Styles
 body {
-    @include var.font(var.$font-outfit, null, null, 1.75, var.$default-color);
+    @include var.font(var.$font-outfit, null, null, 1.75, var.$topaz);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -106,7 +106,7 @@ section {
 
             .loader-circle {
                 fill: none;
-                stroke: var.$background1;
+                stroke: var.$cello;
                 stroke-width: 5;
                 stroke-dasharray: 283;
                 stroke-dashoffset: 283;
@@ -157,7 +157,7 @@ section {
         padding: 10px 20px;
         top: 15px;
         margin: auto 0;
-        background-color: var.$background3;
+        background-color: var.$prussianBlue;
         color: #fff;
         border: none;
         border-radius: 4px;
@@ -223,4 +223,194 @@ section {
         }
     }
 
+}
+
+
+@include var.responsive(xxl) {
+
+    h1 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    p,
+    button {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+@include var.responsive(xl) {
+    h1 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    p,
+    button {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+@include var.responsive(lg) {
+    .navbar-toggler-icon {
+        background-image: none;
+    }
+
+    .navbar-collapse .backicon {
+        display: flex;
+        padding: 15px 25px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-collapse .backicon img {
+        filter: brightness(1000);
+    }
+
+    .navbar-toggler-icon i {
+        color: var.$theme-white;
+        font-size: 40px;
+    }
+
+    nav {
+        .navbar-collapse {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: var.$cello;
+            top: 50px;
+            left: -100%;
+            transition: left 0.9s ease;
+
+            &.active {
+                z-index: 999;
+                left: 0;
+                top: 0;
+                transition: left 0.9s ease;
+            }
+
+            ul {
+                display: block;
+                text-align: center;
+
+                li {
+                    a {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                        color: var.$theme-white;
+                    }
+
+                    i {
+                        color: var.$theme-white;
+                    }
+                }
+            }
+        }
+    }
+    section {
+        padding: 80px 25px;
+    }
+}
+
+@include var.responsive(md) {
+
+    h1 {
+        text-wrap: wrap;
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 80px 25px;
+    }
+
+    .owl-nav .nav {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    .modal-overlay {
+        padding: 100px 50px;
+    }
+
+    .modal-overlay button {
+        top: 18.5px;
+    }
+}
+
+@include var.responsive(sm) {
+
+    section {
+        padding: 60px 15px;
+    }
+
+    .owl-nav .nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p,
+    button {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .modal-overlay {
+        padding: 75px 35px;
+    }
+
+    .modal-overlay input {
+        padding: 15px;
+    }
+
+    .modal-overlay button {
+        top: 10px;
+    }
 }
